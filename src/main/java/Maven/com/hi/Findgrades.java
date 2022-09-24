@@ -23,7 +23,8 @@ public class Findgrades {
         Collections.sort(list2,Collections.reverseOrder());
         String s1="";
         for(int j=0;j<list2.size();j++){
-            s1=s1+Integer.toString(j+1)+"place goes to :"+ms.get(list2.get(j)).getName()+"#";
+            String g=String.valueOf(j+1);
+            s1=s1+ g +"place goes to :"+ms.get(list2.get(j)).getName()+"#";
 
         }
 

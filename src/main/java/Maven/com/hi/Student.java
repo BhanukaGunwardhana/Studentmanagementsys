@@ -46,6 +46,10 @@ public class Student extends Subject {
 
         mapper.writeValue(file.toFile(),std);
     }
+    public Student read(Path file) throws IOException {
+       Student s= mapper.readValue(file.toFile(),Student.class);
+       return s;
+    }
     public String view(List<Path> list)throws Exception{
         String s="";
         for(Path i:list){
